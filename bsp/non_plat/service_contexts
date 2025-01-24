@@ -9,3 +9,6 @@ android.hardware.neuralnetworks.IDevice/mtk-neuron_shim u:object_r:hal_neuralnet
 
 #aovservice aidl
 vendor.mediatek.hardware.camera.aovservice.IAovService/default u:object_r:hal_camera_service:s0
+vendor.mediatek.hardware.camera.atms.IATMs/default u:object_r:hal_camera_service:s0
+vendor.mediatek.hardware.camera.bgservice.IBGService/default u:object_r:hal_camera_service:s0
+vendor.mediatek.hardware.camera.isphal.IISPModule/internal/1 u:object_r:hal_camera_service:s0
