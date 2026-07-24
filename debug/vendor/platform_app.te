@@ -98,3 +98,10 @@ allow platform_app aee_exp_vendor_file:file r_file_perms;
 # Package: com.debug.loggerui
 allow platform_app vcodec_file:dir {rw_dir_perms rmdir};
 allow platform_app vcodec_file:file rw_file_perms;
+
+# Date : 2021/05/19
+# Purpose :[CdsInfo] read/ write WI-FI MAC address by NVRAM API
+# Package Name: com.mediatek.connectivity
+hal_client_domain(platform_app, hal_mtk_nvramagent)
+hal_client_domain(platform_app, hal_telephony)
+binder_call(platform_app, rild)
